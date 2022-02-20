@@ -1,7 +1,5 @@
 @echo on
 
-IF EXIST C:\Python27\NUL SET PATH=C:\Python27\;%PATH%
-
 python --version
 @IF %errorlevel% neq 0 EXIT /b %errorlevel%
 
