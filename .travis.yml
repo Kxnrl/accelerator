@@ -16,7 +16,7 @@ jobs:
       - cd ambuild
       - python setup.py install
       - cd $TRAVIS_BUILD_DIR
-      - '"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat"'
+      - '"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars32.bat"'
       - breakpad.bat
       - set PATH=%PATH%;%CD%\breakpad\src\src\tools\windows\dump_syms\Release
     script:
